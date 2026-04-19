@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="wallpaper.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="wallpaper-header">
+    <h1>Wallpaper Hub</h1>
+    <nav class="wallpaper-nav">
+      <button class="nav-btn active" data-category="all">All</button>
+      <button class="nav-btn" data-category="nature">Nature</button>
+      <button class="nav-btn" data-category="abstract">Abstract</button>
+      <button class="nav-btn" data-category="animals">Animals</button>
+      <button class="nav-btn" data-category="architecture">Architecture</button>
+    </nav>
+  </header>
+
+  <!-- Wallpaper Grid -->
+  <section class="wallpaper-grid" id="wallpaperGrid">
+    <!-- Wallpapers will be inserted by JS -->
+  </section>
+
+  <!-- Load More -->
+  <div class="load-more-container">
+    <button id="loadMoreBtn">Load More</button>
+  </div>
+
+  <script src="wallpaper.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FEF9E1;
+  color: #333;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Header Section */
+header {
+  background-color: #C14600;
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  position: relative;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+header .header-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+header img.logo {
+  width: 100px;
+  border-radius: 50%;
+  animation: logoAnimation 2s infinite alternate;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-top: 10px;
+  animation: fadeInUp 2s ease-out;
+}
+
+header .intro-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #FEF9E1;
+  animation: fadeInUp 2s ease-out;
+  animation-delay: 0.5s;
+}
+
+/* Navigation Bar */
+nav.nav-bar {
+  background-color: #FF9D23;
+  padding: 15px 0;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+nav.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav.nav-bar ul li {
+  list-style: none;
+}
+
+nav.nav-bar ul li a {
+  color: white;
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav.nav-bar ul li a:hover {
+  background-color: #C14600;
+  color: #FEF9E1;
+}
+
+/* Projects Showcase Section */
+.project-showcase {
+  background-color: #FEF9E1;
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.project-showcase .section-title {
+  font-size: 2rem;
+  color: #C14600;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #E5D0AC;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  color: #C14600;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.view-btn {
+  background-color: #FF9D23;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #C14600;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #E5D0AC;
+  padding: 40px 20px;
+  color: #333;
+  border-top: 5px solid #FF9D23;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left h3, .footer-center h4, .footer-right h4 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.footer-left h3 {
+  animation-delay: 0.2s;
+}
+
+.footer-center h4 {
+  animation-delay: 0.4s;
+}
+
+.footer-right h4 {
+  animation-delay: 0.6s;
+}
+
+.footer-center ul li {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.footer-center ul li a:hover {
+  color: #C14600;
+}
+
+.footer-center ul li:nth-child(1) {
+  animation-delay: 0.8s;
+}
+
+.footer-center ul li:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.footer-center ul li:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.footer-center ul li:nth-child(4) {
+  animation-delay: 1.4s;
+}
+
+.footer-center ul li:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+.footer-center ul li:nth-child(6) {
+  animation-delay: 1.8s;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 2s;
+}
+
+.social-icons a {
+  transition: transform 0.3s ease;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 2.2s;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

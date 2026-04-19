@@ -1,0 +1,113 @@
+/* Tour & Travel Page Styles */
+.travel-section {
+  background-color: #FEF9E1;
+  padding: 3rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.travel-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.travel-header h1 {
+  font-size: 3rem;
+  color: #EB5B00;
+}
+
+.travel-header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Destination Grid */
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.destination-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: scale(1.03);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination-card h3 {
+  font-size: 1.3rem;
+  color: #D91656;
+  padding: 1rem;
+}
+
+/* Tour Packages */
+.tour-packages {
+  margin-top: 4rem;
+}
+
+.tour-packages ul {
+  list-style: none;
+  padding: 0;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+/* Why Travel Section */
+.why-travel {
+  margin-top: 4rem;
+}
+
+.why-travel h2 {
+  color: #640D5F;
+}
+
+.why-travel ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.why-travel li::before {
+  content: '🚀 ';
+}
+
+/* Call to Action */
+.travel-cta {
+  margin-top: 3rem;
+  background-color: #FFB200;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.travel-button {
+  margin-top: 1rem;
+  background-color: #640D5F;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.travel-button:hover {
+  background-color: #D91656;
+}

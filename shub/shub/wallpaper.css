@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FEF9E1;
+}
+
+.wallpaper-header {
+  text-align: center;
+  background-color: #FFB200;
+  padding: 2rem;
+  color: white;
+}
+
+.wallpaper-nav {
+  margin-top: 1rem;
+}
+
+.nav-btn {
+  margin: 0 10px;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: #FFB200;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+  background-color: #D91656;
+  color: white;
+}
+
+.wallpaper-grid {
+  column-count: 4;
+  column-gap: 1rem;
+  padding: 2rem;
+}
+
+.wallpaper-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background: white;
+}
+
+.wallpaper-item:hover {
+  transform: scale(1.02);
+}
+
+.wallpaper-item img {
+  width: 100%;
+  display: block;
+}
+
+.load-more-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#loadMoreBtn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: #EB5B00;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#loadMoreBtn:hover {
+  background-color: #640D5F;
+}

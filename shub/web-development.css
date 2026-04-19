@@ -1,0 +1,57 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FEF9E1;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #FF9D23;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #C14600;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.note-section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.note-section h2 {
+  color: #C14600;
+  margin-bottom: 1rem;
+}
+
+.note-section ul {
+  list-style: disc inside;
+  line-height: 1.7;
+}
+
+.note-section a {
+  color: #EB5B00;
+  text-decoration: none;
+}
+
+.note-section a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #FFB200;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  margin-top: 3rem;
+  border-top: 3px solid #D91656;
+}

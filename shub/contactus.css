@@ -1,0 +1,245 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9d23, #e83167);
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.info-section,
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-section h2,
+.form-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+/* Specific styling for the email card */
+.email-card {
+  width: fit-content;
+  max-width: 100%;
+  min-width: 200px;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card h3 {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.info-card a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #f5f5f5;
+}
+
+form button {
+  background: #fff;
+  color: #e88031;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #cee2ff;
+}
+
+#formMsg {
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.footer {
+  background-color: #f06712;
+  padding: 40px 20px;
+  color: #333;
+  border-top: 5px solid #FF9D23;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left h3, .footer-center h4, .footer-right h4 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.footer-left h3 {
+  animation-delay: 0.2s;
+}
+
+.footer-center h4 {
+  animation-delay: 0.4s;
+}
+
+.footer-right h4 {
+  animation-delay: 0.6s;
+}
+
+.footer-center ul li {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.footer-center ul li a:hover {
+  color: #C14600;
+}
+
+.footer-center ul li:nth-child(1) {
+  animation-delay: 0.8s;
+}
+
+.footer-center ul li:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.footer-center ul li:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.footer-center ul li:nth-child(4) {
+  animation-delay: 1.4s;
+}
+
+.footer-center ul li:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+.footer-center ul li:nth-child(6) {
+  animation-delay: 1.8s;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 2s;
+}
+
+.social-icons a {
+  transition: transform 0.3s ease;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 2.2s;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

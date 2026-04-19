@@ -1,0 +1,136 @@
+/* Online Education Page */
+.education-section {
+  background-color: #E5D0AC;
+  padding: 3rem 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.education-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.education-header {
+  margin-bottom: 3rem;
+}
+
+.education-header h1 {
+  font-size: 3rem;
+  color: #640D5F;
+}
+
+.education-tagline {
+  font-size: 1.2rem;
+  color: #7a4c24;
+  margin-top: 0.5rem;
+}
+
+/* Courses Section */
+.courses-section {
+  margin-top: 4rem;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.course-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.course-card h3 {
+  font-size: 1.5rem;
+  color: #640D5F;
+  margin-bottom: 0.5rem;
+}
+
+/* Benefits Section */
+.benefits-section {
+  margin-top: 4rem;
+}
+
+.benefits-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  font-size: 1.2rem;
+  color: #7a4c24;
+  margin-bottom: 1rem;
+}
+
+.benefits-list strong {
+  color: #640D5F;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  margin-top: 4rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #7a4c24;
+  margin-bottom: 0.5rem;
+}
+
+.student-name {
+  font-weight: bold;
+  color: #640D5F;
+}
+
+/* Call to Action Section */
+.cta-section {
+  background-color: #FFB200;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+}
+
+.cta-section h3 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background-color: #640D5F;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #D91656;
+}

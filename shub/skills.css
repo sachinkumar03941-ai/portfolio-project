@@ -1,0 +1,159 @@
+/* Reset & Basic Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfc;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #FF9D23;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.logo {
+  height: 60px;
+  border-radius: 10px;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.intro-text {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Navigation Bar */
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #E5D0AC;
+  margin: 0;
+}
+
+.nav-bar li {
+  margin: 0 15px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #640D5F;
+}
+
+.nav-link.active {
+  color: #D91656;
+}
+
+/* Section Containers */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Skills Section */
+.skills-section h2, .resources-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #C14600;
+  text-align: center;
+}
+
+.skill-category {
+  margin-bottom: 40px;
+}
+
+.skill-category h3 {
+  color: #EB5B00;
+  margin-bottom: 10px;
+}
+
+.skill-category ul {
+  padding-left: 20px;
+  list-style-type: circle;
+}
+
+/* Resource Cards */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.resource-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: 0.3s ease-in-out;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  background-color: #fefaf2;
+}
+
+/* Footer */
+.footer {
+  background-color: #640D5F;
+  color: white;
+  padding: 40px 20px 10px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-center li a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+/* Scroll Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
